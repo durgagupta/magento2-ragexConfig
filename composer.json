@@ -1,0 +1,22 @@
+{
+    "name": "ace/module-regexconfig",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "dsguptas@gmail.com",
+            "name": "Durga Shankar Gupta"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ace\\RegexConfig\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

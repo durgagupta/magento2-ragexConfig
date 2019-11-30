@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="ace" translate="label" sortOrder="100">
+            <label>Ace</label>
+        </tab>
+
+        <section id="regex_config" translate="label" type="text"
+                 sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Regex Config</label>
+            <tab>ace</tab>
+            <resource>Ace_RegexConfig::regex_config</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="1"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+
+                <field id="my_config" translate="label" type="text" sortOrder="40"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>My Regex Config</label>
+                    <frontend_model>Ace\RegexConfig\Block\System\Form\Field\Regex</frontend_model>
+                    <backend_model>Ace\RegexConfig\Model\Config\Backend\Serialized</backend_model>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>
